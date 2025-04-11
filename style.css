@@ -7,7 +7,6 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 a{
@@ -27,8 +26,9 @@ header{
 li:hover{
     background-color: lightgray;
 }
+
 nav {
-    justify-items: right;
+    justify-items: center;
     width: 50vw;
 }
 
@@ -36,6 +36,7 @@ h1 {
     font-size: 2rem;
     padding: 0 2rem 0 2rem;
     margin: 0;
+    justify-items: left;
 }
 
 ul {
@@ -43,8 +44,11 @@ ul {
     justify-content: space-between;
     text-decoration: none;
     list-style: none;
-    padding: 0 2rem 0 2rem;
     width: 25vw;
+}
+
+li {
+    padding: 0 1rem 0 1rem;
 }
 
 main {
@@ -57,11 +61,14 @@ main {
 
 footer {
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     background-color: lightslategray;
     padding: 1rem;
     margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -70,6 +77,7 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     nav{
 
     }
