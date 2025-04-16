@@ -1,3 +1,4 @@
+/* General rules for each page */
 *{
     margin: 0;
     padding: 0; 
@@ -9,7 +10,7 @@ body {
     margin-top: 2rem;
     padding: auto;
     color: lightcyan; 
-
+    height: 100vh;
 }
 
 a{
@@ -76,6 +77,7 @@ li {
 main {
     display: flex;
     background-color: slategray;
+    top: 0;
     margin: 0 auto;
     width: 1200px;
     height: 100vh;
@@ -89,7 +91,7 @@ main {
 
 img {
     border-radius: 25%;
-    width: 300px;
+    width: 500px;
     height: auto;
 }
 
@@ -101,7 +103,6 @@ img {
 
 footer {
     display: flex;
-  
     justify-content: center;
     align-items: center;
     background-color: lightslategray;
@@ -136,10 +137,26 @@ footer {
 
 
 /* Rules for homepage */
-.homepage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#homepage {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
+}
+
+#homepage h1{
+    font-size: 4rem;
+    padding: 0 2rem 0 2rem;
+    margin: 0;
+    justify-items: left;
+}
+
+#homepage img {
+    padding: 0 2rem 0 2rem;
+}
+
+#homepage p {
+    font-size: 1.5rem;
+    padding: 3rem 2rem 0 2rem;
+    margin: 0;
+    justify-items: left;
 }
