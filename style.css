@@ -1,22 +1,18 @@
 /* General rules for each page */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0; 
 }
 
 body {
-    background-color: lightcyan;
+    background-color: darkslategray;
     font-family: sans-serif;
     margin-top: 2rem;
-    padding: auto;
-    color: lightcyan; 
-    height: 100vh;
+    padding: auto; 
 }
 
-a{
-    text-decoration: none;
-    color: lightcyan;
-}
+
 
 header{
     display: flex;
@@ -28,17 +24,17 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    
     box-shadow: 0px 2px 5px black;
-    /* border: 1px solid black; */
+ 
 }
 
-li:hover{
-    background-color: lightgray;
-    color: darkslategray;
-    border-radius: 5px;
-    transition: 0.3s;
+nav a{
+    text-decoration: none;
+    color: lightcyan;
+    padding: 0 2rem 0 2rem;
+    /* margin: 0 2rem 0 2rem; */
 }
+
 
 .active {
     background-color: lightgray;
@@ -49,8 +45,6 @@ li:hover{
 nav {
     justify-items: right;
     width: 50vw;
-    
-    /* border: 1px solid black; */
 }
 
 h1 {
@@ -59,7 +53,10 @@ h1 {
     margin: 0;
     justify-items: left;
 
-    /* border: 1px solid black; */
+}
+
+h2 {
+    padding: 1rem 0 1rem 0;
 }
 
 ul {
@@ -69,31 +66,29 @@ ul {
     list-style: none;
 }
 
-li {
-    padding: 0 1rem 0 1rem;
- 
+nav a:hover{
+    background-color: lightgray;
+    color: darkslategray;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
-main {
+
+main{
     display: flex;
-    background-color: slategray;
+    color: lightcyan;
     top: 0;
+    bottom: 0;
     margin: 0 auto;
     width: 1200px;
     height: 100vh;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 1rem;
-    padding-top: 2rem;
-
+    padding: 2rem 1rem 2rem 2rem;
 }
 
-img {
-    border-radius: 25%;
-    width: 500px;
-    height: auto;
-}
+
 
 #form {
     width: 100%;
@@ -115,27 +110,6 @@ footer {
     box-shadow: 0px -2px 5px black;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        margin-top: 3rem;
-    }
-    header {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    main {
-        width: 100vw;
-    }
-
-    img {
-        border-radius: 25%;
-        width: 50%;
-        height: auto;
-    }
-}
-
-
 /* Rules for homepage */
 #homepage {
     flex-direction: row;
@@ -151,7 +125,9 @@ footer {
 }
 
 #homepage img {
-    padding: 0 2rem 0 2rem;
+    border-radius: 25%;
+    width: 500px;
+    height: auto;padding: 0 2rem 0 2rem;
 }
 
 #homepage p {
@@ -161,10 +137,95 @@ footer {
     justify-items: left;
 }
 
-
 /* Rules for success.html */
 .success-body {
-    
     background-color: white;
     color: black;
+}
+
+
+/* Rules for portfolio.html*/
+#projects {
+    display: flex;
+    justify-content: center;  
+    flex-direction: row;
+
+}
+
+#projects div{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: lightgray;
+    border-radius: 5px;  
+}
+
+#projects p {
+    padding: 2rem 0 2rem 0;;
+    margin: 0;
+    justify-items: left;
+}
+
+#projects img {
+   align-self: space-between;
+   width: 100%;
+   height: auto;
+}
+
+/* Rules for contact form */
+#contactpage {
+    align-items: start;
+}
+
+
+#contact h2 {
+    font-size: 2rem;
+    padding: 0 2rem 0 0;
+    margin: 0;
+    justify-items: left;
+}
+
+#contactpage p {
+    font-size: 1rem;
+    padding: 1rem 0 0 0;
+    margin: 0;
+    justify-items: left;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin-top: 3rem;
+    }
+    header {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    nav{
+        width: 100vw;
+        justify-items: center;
+    }
+
+    #homepage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

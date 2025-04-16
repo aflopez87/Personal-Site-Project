@@ -27,4 +27,3 @@ Note: You can use Lorem Ipsum for placeholder content, but it would be great if 
 
 Note: The form does not have to send an actual email, but you are welcome to have the button direct to a success.html file with a success message.
 
-There are three tabs below to help you stay organized as you work on this simulation.
