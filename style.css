@@ -149,6 +149,7 @@ footer {
     display: flex;
     justify-content: center;  
     flex-direction: row;
+    color: darkslategray
 
 }
 
@@ -165,11 +166,9 @@ footer {
 #projects p {
     padding: 2rem 0 2rem 0;;
     margin: 0;
-    justify-items: left;
 }
 
 #projects img {
-   align-self: space-between;
    width: 100%;
    height: auto;
 }
