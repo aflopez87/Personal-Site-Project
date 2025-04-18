@@ -111,7 +111,7 @@ footer {
 
 #homepage h1{
     font-size: 4rem;
-    padding: 0 2rem 0 2rem;
+    padding: 2rem 2rem 0 2rem;
     margin: 0;
     justify-items: left;
 }
@@ -171,9 +171,21 @@ footer {
 
 #hobbies div p {
     font-size: 1rem;
-    padding: 2rem;
     margin: 0;
 }
+
+#hobbies h3 {
+    width: 100%;
+    /* border: 1px black solid;  */
+}
+
+#hobbies .text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* border: 1px black solid; */
+}
+
 /* __________________________________________________________________________ */
 /* Rules for portfolio.html*/
 #projects {
@@ -287,6 +299,7 @@ footer {
         justify-items: center;
     }
 
+  
     main {
         flex-direction: column;
         width: 100vw;
@@ -330,11 +343,21 @@ footer {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 875px) {
     nav{
-        width: 100vw;
+        width: 50%;
         justify-items: center;
     }
+
+    #aboutpage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     main {
         width: 100vw;
     }
@@ -343,9 +366,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100vw;
     }
 
-        #hobbies div{
+    #hobbies div{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -356,12 +380,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+    }
     #projects {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-   
 }
+
