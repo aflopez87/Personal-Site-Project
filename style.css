@@ -15,8 +15,6 @@ body {
     flex-grow: 1;
 }
 
-
-
 header{
     display: flex;
     justify-content: center;
@@ -27,14 +25,12 @@ header{
     top: 0;
     width: 100vw;
     box-shadow: 0px 2px 5px black;
- 
 }
 
 nav a{
     text-decoration: none;
     color: lightcyan;
     padding: 0 2rem 0 2rem;
-    /* margin: 0 2rem 0 2rem; */
 }
 
 
@@ -54,11 +50,11 @@ h1 {
     padding: 0 2rem 0 2rem;
     margin: 0;
     justify-items: left;
-
 }
 
 h2 {
-    padding: 1rem 0 1rem 0;
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
 }
 
 ul {
@@ -75,7 +71,6 @@ nav a:hover{
     transition: 0.5s;
 }
 
-
 main{
     display: flex;
     color: lightcyan;
@@ -84,9 +79,8 @@ main{
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 2rem 1rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     flex-grow: 1;
-
 }
 
 #form {
@@ -102,21 +96,17 @@ footer {
     background-color: lightslategray;
     color: lightcyan;
     padding: 1rem;
-    position: sticky;
+    position: relative;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px; 
+    width: 100%;
     box-shadow: 0px -2px 5px black;
 }
-
-
+/* __________________________________________________________________________ */
 /* Rules for homepage */
 #homepage {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 #homepage h1{
@@ -138,25 +128,16 @@ footer {
     margin: 0;
     justify-items: left;
 }
-
-#indexfooter {
-    height: min-content;
-}
-
+/* __________________________________________________________________________ */
 /* Rules for about.html */
 #aboutpage {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* flex-direction: column; */
-
 }  
 
 #aboutpage h2 {
-    font-size: 2rem;
-    padding: 2rem 0 2rem 0;
-    margin: 0;
-
+    padding: 0 0 2rem 0;
+    text-align: center;
 }
 
 #aboutpage p {
@@ -167,19 +148,39 @@ footer {
 }
 
 #aboutpage img {
-    width: 25%;
-    height: auto;
+    width: auto;
+    height: 425px;
     padding: 0;
+    border-radius: 10px;
 }
 
+#hobbies {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+#hobbies div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hobbies div:nth-of-type(2) {
+    flex-direction: row-reverse;
+} 
+
+#hobbies div p {
+    font-size: 1rem;
+    padding: 2rem;
+    margin: 0;
+}
+/* __________________________________________________________________________ */
 /* Rules for portfolio.html*/
 #projects {
     display: flex;
     justify-content: center;  
     flex-direction: row;
     color: darkslategray
-
 }
 
 #projects div{
@@ -201,41 +202,86 @@ footer {
    width: 100%;
    height: auto;
 }
-
+/* __________________________________________________________________________ */
 /* Rules for contact form */
 #contactpage {
-    align-items: start;
+    display: flex;
+    justify-content: center;
 }
 
-
-#contact h2 {
-    font-size: 2rem;
-    padding: 0 2rem 0 0;
-    margin: 0;
-    justify-items: left;
+#contactpage h2 {
+    text-align: center;
 }
 
 #contactpage p {
     font-size: 1rem;
-    padding: 1rem 0 0 0;
+    padding: 0 0 1rem 0;    
     margin: 0;
-    justify-items: left;
+    text-align: center;
 }
 
+#contactpage p:nth-of-type(1) {
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5rem;
+}
+
+#contactpage #contact{
+    justify-items: center;
+    align-items: center;
+}
+
+#contactpage .linkedin {
+    height: 5rem;
+    width: auto;
+}
+
+#contactpage #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#contactpage form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 25%;
+}
+
+#contactpage label {
+    padding: 1rem 0 0 0;
+    margin: 0;
+    font-weight: bold ;
+}
+
+#contactpage input {
+    border-radius: 5px;
+} 
+
+#contactpage textarea {
+    resize: vertical;
+    border-radius: 5px;
+}
+
+
+
+/* __________________________________________________________________________ */
 /* Rules for success.html */
 .success-body {
     background-color: white;
     color: black;
 }
 
+/* __________________________________________________________________________ */
+/* Resizing */
 @media screen and (max-width: 768px) {
     * {
         box-sizing: border-box;
     }
 
-    body {
-        margin-top: 3rem;
-    }
     header {
         flex-direction: column;
         justify-items: center;
@@ -262,4 +308,60 @@ footer {
         align-items: center;
     }
 
+    #hobbies div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #hobbies div:nth-of-type(2){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        width: 100vw;
+        justify-items: center;
+    }
+    main {
+        width: 100vw;
+    }
+
+    #aboutpage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #hobbies div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #hobbies div:nth-of-type(2){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    #projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
 }
