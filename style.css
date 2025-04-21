@@ -283,10 +283,19 @@ footer {
 /* __________________________________________________________________________ */
 /* Rules for success.html */
 .success-body {
-    background-color: white;
-    color: black;
+    /* background-color: white; */
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.success-body p {
+    text-align: center;
+    font-size: 3rem;
+    color: lightcyan;
+    font-stretch: extra-expanded;
+}
 /* __________________________________________________________________________ */
 /* Resizing */
 @media screen and (max-width: 768px) {
